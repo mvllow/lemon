@@ -24,7 +24,6 @@ Partial Class fBookmarks
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(fBookmarks))
-        Me.listBookmarks = New System.Windows.Forms.ListBox()
         Me.cmBookmarks = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.iEditBookmarks = New System.Windows.Forms.ToolStripMenuItem()
         Me.space1 = New System.Windows.Forms.ToolStripSeparator()
@@ -34,24 +33,9 @@ Partial Class fBookmarks
         Me.txtUrl = New System.Windows.Forms.Label()
         Me.tbUrl = New System.Windows.Forms.TextBox()
         Me.bAdd = New System.Windows.Forms.Button()
+        Me.listBookmarks = New System.Windows.Forms.ListBox()
         Me.cmBookmarks.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'listBookmarks
-        '
-        Me.listBookmarks.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.listBookmarks.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.listBookmarks.ContextMenuStrip = Me.cmBookmarks
-        Me.listBookmarks.Dock = System.Windows.Forms.DockStyle.Left
-        Me.listBookmarks.Font = New System.Drawing.Font("Segoe UI Light", 12.0!)
-        Me.listBookmarks.ForeColor = System.Drawing.Color.White
-        Me.listBookmarks.FormattingEnabled = True
-        Me.listBookmarks.HorizontalScrollbar = True
-        Me.listBookmarks.ItemHeight = 21
-        Me.listBookmarks.Location = New System.Drawing.Point(0, 0)
-        Me.listBookmarks.Name = "listBookmarks"
-        Me.listBookmarks.Size = New System.Drawing.Size(534, 411)
-        Me.listBookmarks.TabIndex = 5
         '
         'cmBookmarks
         '
@@ -135,6 +119,22 @@ Partial Class fBookmarks
         Me.bAdd.TabIndex = 2
         Me.bAdd.UseVisualStyleBackColor = True
         '
+        'listBookmarks
+        '
+        Me.listBookmarks.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.listBookmarks.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.listBookmarks.ContextMenuStrip = Me.cmBookmarks
+        Me.listBookmarks.Dock = System.Windows.Forms.DockStyle.Left
+        Me.listBookmarks.Font = New System.Drawing.Font("Segoe UI Light", 12.0!)
+        Me.listBookmarks.ForeColor = System.Drawing.Color.White
+        Me.listBookmarks.FormattingEnabled = True
+        Me.listBookmarks.HorizontalScrollbar = True
+        Me.listBookmarks.ItemHeight = 21
+        Me.listBookmarks.Location = New System.Drawing.Point(0, 0)
+        Me.listBookmarks.Name = "listBookmarks"
+        Me.listBookmarks.Size = New System.Drawing.Size(534, 411)
+        Me.listBookmarks.TabIndex = 5
+        '
         'fBookmarks
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 21.0!)
@@ -163,7 +163,6 @@ Partial Class fBookmarks
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents listBookmarks As System.Windows.Forms.ListBox
     Friend WithEvents txtName As System.Windows.Forms.Label
     Friend WithEvents tbName As System.Windows.Forms.TextBox
     Friend WithEvents txtUrl As System.Windows.Forms.Label
@@ -173,4 +172,5 @@ Partial Class fBookmarks
     Friend WithEvents iEditBookmarks As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents space1 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents iClearBookmarks As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents listBookmarks As System.Windows.Forms.ListBox
 End Class
