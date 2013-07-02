@@ -34,11 +34,11 @@ Partial Class fMain
         Me.bForward = New System.Windows.Forms.Button()
         Me.bLock = New System.Windows.Forms.Button()
         Me.pApps = New System.Windows.Forms.Panel()
+        Me.listHistory = New System.Windows.Forms.ListBox()
         Me.bFullscreen = New System.Windows.Forms.Button()
         Me.pMenu = New System.Windows.Forms.MenuStrip()
         Me.iClose = New System.Windows.Forms.ToolStripMenuItem()
         Me.iVersion = New System.Windows.Forms.ToolStripMenuItem()
-        Me.listHistory = New System.Windows.Forms.ListBox()
         Me.listBookmarks = New System.Windows.Forms.ListBox()
         Me.bOffline = New System.Windows.Forms.Button()
         Me.bShare = New System.Windows.Forms.Button()
@@ -91,9 +91,9 @@ Partial Class fMain
         Me.picFavicon.BackColor = System.Drawing.Color.White
         Me.picFavicon.ErrorImage = Nothing
         Me.picFavicon.InitialImage = Nothing
-        Me.picFavicon.Location = New System.Drawing.Point(117, 9)
+        Me.picFavicon.Location = New System.Drawing.Point(118, 9)
         Me.picFavicon.Name = "picFavicon"
-        Me.picFavicon.Size = New System.Drawing.Size(20, 20)
+        Me.picFavicon.Size = New System.Drawing.Size(19, 19)
         Me.picFavicon.TabIndex = 8
         Me.picFavicon.TabStop = False
         '
@@ -107,7 +107,7 @@ Partial Class fMain
         Me.bNav.ForeColor = System.Drawing.Color.White
         Me.bNav.Location = New System.Drawing.Point(1165, 9)
         Me.bNav.Name = "bNav"
-        Me.bNav.Size = New System.Drawing.Size(20, 20)
+        Me.bNav.Size = New System.Drawing.Size(19, 19)
         Me.bNav.TabIndex = 7
         Me.bNav.UseVisualStyleBackColor = False
         '
@@ -123,7 +123,7 @@ Partial Class fMain
         Me.tbNav.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.tbNav.Location = New System.Drawing.Point(137, 9)
         Me.tbNav.Name = "tbNav"
-        Me.tbNav.Size = New System.Drawing.Size(1048, 20)
+        Me.tbNav.Size = New System.Drawing.Size(1048, 19)
         Me.tbNav.TabIndex = 0
         '
         'bMenu
@@ -216,6 +216,20 @@ Partial Class fMain
         Me.pApps.TabIndex = 2
         Me.pApps.Visible = False
         '
+        'listHistory
+        '
+        Me.listHistory.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.listHistory.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.listHistory.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.listHistory.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.listHistory.FormattingEnabled = True
+        Me.listHistory.IntegralHeight = False
+        Me.listHistory.ItemHeight = 18
+        Me.listHistory.Location = New System.Drawing.Point(3, 203)
+        Me.listHistory.Name = "listHistory"
+        Me.listHistory.Size = New System.Drawing.Size(394, 194)
+        Me.listHistory.TabIndex = 18
+        '
         'bFullscreen
         '
         Me.bFullscreen.Anchor = System.Windows.Forms.AnchorStyles.Top
@@ -254,20 +268,6 @@ Partial Class fMain
         Me.iVersion.Name = "iVersion"
         Me.iVersion.Size = New System.Drawing.Size(28, 20)
         '
-        'listHistory
-        '
-        Me.listHistory.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.listHistory.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.listHistory.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.listHistory.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.listHistory.FormattingEnabled = True
-        Me.listHistory.IntegralHeight = False
-        Me.listHistory.ItemHeight = 20
-        Me.listHistory.Location = New System.Drawing.Point(3, 203)
-        Me.listHistory.Name = "listHistory"
-        Me.listHistory.Size = New System.Drawing.Size(394, 194)
-        Me.listHistory.TabIndex = 18
-        '
         'listBookmarks
         '
         Me.listBookmarks.Anchor = System.Windows.Forms.AnchorStyles.Bottom
@@ -276,7 +276,7 @@ Partial Class fMain
         Me.listBookmarks.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.listBookmarks.FormattingEnabled = True
         Me.listBookmarks.IntegralHeight = False
-        Me.listBookmarks.ItemHeight = 20
+        Me.listBookmarks.ItemHeight = 18
         Me.listBookmarks.Location = New System.Drawing.Point(3, 203)
         Me.listBookmarks.Name = "listBookmarks"
         Me.listBookmarks.Size = New System.Drawing.Size(394, 194)
@@ -294,6 +294,7 @@ Partial Class fMain
         Me.bOffline.Size = New System.Drawing.Size(48, 48)
         Me.bOffline.TabIndex = 16
         Me.bOffline.UseVisualStyleBackColor = True
+        Me.bOffline.Visible = False
         '
         'bShare
         '
@@ -307,6 +308,7 @@ Partial Class fMain
         Me.bShare.Size = New System.Drawing.Size(48, 48)
         Me.bShare.TabIndex = 15
         Me.bShare.UseVisualStyleBackColor = True
+        Me.bShare.Visible = False
         '
         'bPrintPreview
         '
@@ -417,7 +419,7 @@ Partial Class fMain
         '
         'fMain
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.CancelButton = Me.bLock

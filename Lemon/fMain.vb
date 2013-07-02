@@ -172,6 +172,7 @@ Public Class fMain
             listBookmarks.Visible = False
             listHistory.Visible = False
             pApps.Visible = True
+            pApps.BringToFront()
         End If
     End Sub
 
