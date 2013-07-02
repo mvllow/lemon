@@ -372,8 +372,4 @@ Public Class fMain
         Catch ex As Exception
         End Try
     End Sub
-
-    Private Sub pApps_Leave(sender As Object, e As EventArgs) Handles pApps.Leave
-        pApps.Visible = False
-    End Sub
 End Class
