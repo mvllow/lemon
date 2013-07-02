@@ -273,12 +273,16 @@ Public Class fMain
     End Sub
 
     Private Sub bBookmarks_Click(sender As Object, e As EventArgs) Handles bBookmarks.Click
+        loadBookmarks()
+
         pApps.Height = 400
         listBookmarks.Visible = True
         listBookmarks.BringToFront()
     End Sub
 
     Private Sub bHistory_Click(sender As Object, e As EventArgs) Handles bHistory.Click
+        loadHistory()
+
         pApps.Height = 400
         listHistory.Visible = True
         listHistory.BringToFront()

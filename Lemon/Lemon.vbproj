@@ -26,7 +26,7 @@
     <InstallUrl>https://dl.dropbox.com/u/57594406/downloads/lemon/release/</InstallUrl>
     <ProductName>lemon</ProductName>
     <PublisherName>Mellow</PublisherName>
-    <ApplicationRevision>11</ApplicationRevision>
+    <ApplicationRevision>12</ApplicationRevision>
     <ApplicationVersion>1.3.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
