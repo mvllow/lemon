@@ -2,79 +2,78 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
   <Profiles />
   <Settings>
-    <Setting Name="varHomepage" Type="System.String" Scope="User">
+    <Setting Name="dataHome" Type="System.String" Scope="User">
       <Value Profile="(Default)">google.com</Value>
     </Setting>
-    <Setting Name="varPassword" Type="System.String" Scope="User">
+    <Setting Name="dataPin" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="varUsername" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="varBookmark" Type="System.Collections.Specialized.StringCollection" Scope="User">
+    <Setting Name="dataBookmarks" Type="System.Collections.Specialized.StringCollection" Scope="User">
       <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
   &lt;string&gt;Google&lt;/string&gt;
 &lt;/ArrayOfString&gt;</Value>
     </Setting>
-    <Setting Name="varHistory" Type="System.Collections.Specialized.StringCollection" Scope="User">
-      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;string&gt;google.com&lt;/string&gt;
-&lt;/ArrayOfString&gt;</Value>
-    </Setting>
-    <Setting Name="varNotes" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Welcome to your personal notepad!  These notes will automagically save when you exit, however you may save them as a text file by right clicking.</Value>
-    </Setting>
-    <Setting Name="varUrl" Type="System.Collections.Specialized.StringCollection" Scope="User">
+    <Setting Name="dataUrl" Type="System.Collections.Specialized.StringCollection" Scope="User">
       <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
   &lt;string&gt;http://www.google.com&lt;/string&gt;
 &lt;/ArrayOfString&gt;</Value>
     </Setting>
-    <Setting Name="autoComplete" Type="System.Collections.Specialized.StringCollection" Scope="User">
+    <Setting Name="dataHistory" Type="System.Collections.Specialized.StringCollection" Scope="User">
       <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
   &lt;string&gt;google.com&lt;/string&gt;
 &lt;/ArrayOfString&gt;</Value>
     </Setting>
-    <Setting Name="themeDark" Type="System.String" Scope="User">
+    <Setting Name="dataNotes" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Welcome to your personal notepad!  These notes will automagically save when you exit.</Value>
+    </Setting>
+    <Setting Name="dataMemory" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;google.com&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="dataDomains" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;http://&lt;/string&gt;
+  &lt;string&gt;www.&lt;/string&gt;
+  &lt;string&gt;.aero&lt;/string&gt;
+  &lt;string&gt;.asia&lt;/string&gt;
+  &lt;string&gt;.biz&lt;/string&gt;
+  &lt;string&gt;.cat&lt;/string&gt;
+  &lt;string&gt;.com&lt;/string&gt;
+  &lt;string&gt;.coop&lt;/string&gt;
+  &lt;string&gt;.edu&lt;/string&gt;
+  &lt;string&gt;.gov&lt;/string&gt;
+  &lt;string&gt;.info&lt;/string&gt;
+  &lt;string&gt;.int&lt;/string&gt;
+  &lt;string&gt;.jobs&lt;/string&gt;
+  &lt;string&gt;.mil&lt;/string&gt;
+  &lt;string&gt;.mobi&lt;/string&gt;
+  &lt;string&gt;.museum&lt;/string&gt;
+  &lt;string&gt;.name&lt;/string&gt;
+  &lt;string&gt;.net&lt;/string&gt;
+  &lt;string&gt;.org&lt;/string&gt;
+  &lt;string&gt;.post&lt;/string&gt;
+  &lt;string&gt;.pro&lt;/string&gt;
+  &lt;string&gt;.tel&lt;/string&gt;
+  &lt;string&gt;.travel&lt;/string&gt;
+  &lt;string&gt;.xxx&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="varGoogle" Type="System.String" Scope="User">
       <Value Profile="(Default)">true</Value>
     </Setting>
-    <Setting Name="themeLight" Type="System.String" Scope="User">
+    <Setting Name="varHideWelcome" Type="System.String" Scope="User">
       <Value Profile="(Default)">false</Value>
     </Setting>
-    <Setting Name="varTopSearch" Type="System.String" Scope="User">
+    <Setting Name="varRemember" Type="System.String" Scope="User">
       <Value Profile="(Default)">false</Value>
     </Setting>
-    <Setting Name="searchGoogle" Type="System.String" Scope="User">
-      <Value Profile="(Default)">true</Value>
-    </Setting>
-    <Setting Name="searchBing" Type="System.String" Scope="User">
-      <Value Profile="(Default)">false</Value>
-    </Setting>
-    <Setting Name="searchYoutube" Type="System.String" Scope="User">
-      <Value Profile="(Default)">false</Value>
-    </Setting>
-    <Setting Name="varFullscreen" Type="System.String" Scope="User">
-      <Value Profile="(Default)">false</Value>
-    </Setting>
-    <Setting Name="cache" Type="System.String" Scope="User">
-      <Value Profile="(Default)">false</Value>
-    </Setting>
-    <Setting Name="autoHideMenu" Type="System.String" Scope="User">
-      <Value Profile="(Default)">false</Value>
-    </Setting>
-    <Setting Name="varSelectedFav" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="autoLock" Type="System.String" Scope="User">
-      <Value Profile="(Default)">false</Value>
-    </Setting>
-    <Setting Name="autoClear" Type="System.String" Scope="User">
-      <Value Profile="(Default)">false</Value>
-    </Setting>
-    <Setting Name="varStartLocked" Type="System.String" Scope="User">
+    <Setting Name="varTopNav" Type="System.String" Scope="User">
       <Value Profile="(Default)">false</Value>
     </Setting>
   </Settings>

@@ -23,274 +23,243 @@ Partial Class fOptions
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(fOptions))
-        Me.txtHomepage = New System.Windows.Forms.Label()
-        Me.tbHomepage = New System.Windows.Forms.TextBox()
-        Me.bCurrentPage = New System.Windows.Forms.Button()
-        Me.bSetHomepage = New System.Windows.Forms.Button()
-        Me.txtSearchEngine = New System.Windows.Forms.Label()
-        Me.txtTheme = New System.Windows.Forms.Label()
-        Me.comboTheme = New System.Windows.Forms.ComboBox()
-        Me.comboSearch = New System.Windows.Forms.ComboBox()
-        Me.cbTopSearchBar = New System.Windows.Forms.CheckBox()
-        Me.bChangePassword = New System.Windows.Forms.Button()
-        Me.tbOldPassword = New System.Windows.Forms.TextBox()
-        Me.txtOldPassword = New System.Windows.Forms.Label()
-        Me.tbNewPassword = New System.Windows.Forms.TextBox()
-        Me.txtNewPassword = New System.Windows.Forms.Label()
-        Me.cbEarlyReleases = New System.Windows.Forms.CheckBox()
-        Me.gbPreferences = New System.Windows.Forms.GroupBox()
-        Me.cbStartLocked = New System.Windows.Forms.CheckBox()
-        Me.gbPreferences.SuspendLayout()
+        Me.tbNewPin = New System.Windows.Forms.TextBox()
+        Me.txtNewPin = New System.Windows.Forms.Label()
+        Me.tbPin = New System.Windows.Forms.TextBox()
+        Me.txtPin = New System.Windows.Forms.Label()
+        Me.bResetHistory = New System.Windows.Forms.Button()
+        Me.bResetBookmarks = New System.Windows.Forms.Button()
+        Me.bResetMemory = New System.Windows.Forms.Button()
+        Me.boxPrivacy = New System.Windows.Forms.GroupBox()
+        Me.bResetBrowser = New System.Windows.Forms.Button()
+        Me.txtReset = New System.Windows.Forms.Label()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.cbTopNav = New System.Windows.Forms.CheckBox()
+        Me.cbHideWelcome = New System.Windows.Forms.CheckBox()
+        Me.txtHome = New System.Windows.Forms.Label()
+        Me.tbHome = New System.Windows.Forms.TextBox()
+        Me.boxPrivacy.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'txtHomepage
+        'tbNewPin
         '
-        Me.txtHomepage.AutoSize = True
-        Me.txtHomepage.Location = New System.Drawing.Point(8, 13)
-        Me.txtHomepage.Name = "txtHomepage"
-        Me.txtHomepage.Size = New System.Drawing.Size(85, 21)
-        Me.txtHomepage.TabIndex = 0
-        Me.txtHomepage.Text = "Homepage"
+        Me.tbNewPin.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.tbNewPin.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.tbNewPin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.tbNewPin.Location = New System.Drawing.Point(6, 46)
+        Me.tbNewPin.MaxLength = 4
+        Me.tbNewPin.Name = "tbNewPin"
+        Me.tbNewPin.PasswordChar = Global.Microsoft.VisualBasic.ChrW(43)
+        Me.tbNewPin.Size = New System.Drawing.Size(94, 20)
+        Me.tbNewPin.TabIndex = 2
         '
-        'tbHomepage
+        'txtNewPin
         '
-        Me.tbHomepage.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.tbHomepage.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append
-        Me.tbHomepage.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource
-        Me.tbHomepage.BackColor = System.Drawing.Color.DimGray
-        Me.tbHomepage.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.tbHomepage.ForeColor = System.Drawing.Color.White
-        Me.tbHomepage.Location = New System.Drawing.Point(12, 37)
-        Me.tbHomepage.Name = "tbHomepage"
-        Me.tbHomepage.Size = New System.Drawing.Size(356, 22)
-        Me.tbHomepage.TabIndex = 1
+        Me.txtNewPin.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.txtNewPin.AutoSize = True
+        Me.txtNewPin.Location = New System.Drawing.Point(2, 23)
+        Me.txtNewPin.Name = "txtNewPin"
+        Me.txtNewPin.Size = New System.Drawing.Size(63, 20)
+        Me.txtNewPin.TabIndex = 11
+        Me.txtNewPin.Text = "new pin"
         '
-        'bCurrentPage
+        'tbPin
         '
-        Me.bCurrentPage.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.bCurrentPage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.bCurrentPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.bCurrentPage.ForeColor = System.Drawing.Color.White
-        Me.bCurrentPage.Location = New System.Drawing.Point(412, 31)
-        Me.bCurrentPage.Name = "bCurrentPage"
-        Me.bCurrentPage.Size = New System.Drawing.Size(110, 32)
-        Me.bCurrentPage.TabIndex = 3
-        Me.bCurrentPage.Text = "Current Page"
-        Me.bCurrentPage.UseVisualStyleBackColor = True
+        Me.tbPin.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.tbPin.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.tbPin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.tbPin.Location = New System.Drawing.Point(106, 46)
+        Me.tbPin.MaxLength = 4
+        Me.tbPin.Name = "tbPin"
+        Me.tbPin.PasswordChar = Global.Microsoft.VisualBasic.ChrW(43)
+        Me.tbPin.Size = New System.Drawing.Size(94, 20)
+        Me.tbPin.TabIndex = 12
         '
-        'bSetHomepage
+        'txtPin
         '
-        Me.bSetHomepage.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.bSetHomepage.BackgroundImage = Global.Lemon.My.Resources.Resources.accept_light
-        Me.bSetHomepage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.bSetHomepage.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.bSetHomepage.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.bSetHomepage.Location = New System.Drawing.Point(374, 31)
-        Me.bSetHomepage.Name = "bSetHomepage"
-        Me.bSetHomepage.Size = New System.Drawing.Size(32, 32)
-        Me.bSetHomepage.TabIndex = 2
-        Me.bSetHomepage.UseVisualStyleBackColor = True
+        Me.txtPin.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.txtPin.AutoSize = True
+        Me.txtPin.Location = New System.Drawing.Point(102, 23)
+        Me.txtPin.Name = "txtPin"
+        Me.txtPin.Size = New System.Drawing.Size(62, 20)
+        Me.txtPin.TabIndex = 13
+        Me.txtPin.Text = "confirm"
         '
-        'txtSearchEngine
+        'bResetHistory
         '
-        Me.txtSearchEngine.AutoSize = True
-        Me.txtSearchEngine.Location = New System.Drawing.Point(248, 193)
-        Me.txtSearchEngine.Name = "txtSearchEngine"
-        Me.txtSearchEngine.Size = New System.Drawing.Size(105, 21)
-        Me.txtSearchEngine.TabIndex = 6
-        Me.txtSearchEngine.Text = "Search Engine"
+        Me.bResetHistory.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.bResetHistory.FlatAppearance.BorderSize = 0
+        Me.bResetHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bResetHistory.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.bResetHistory.Location = New System.Drawing.Point(112, 102)
+        Me.bResetHistory.Name = "bResetHistory"
+        Me.bResetHistory.Size = New System.Drawing.Size(100, 32)
+        Me.bResetHistory.TabIndex = 15
+        Me.bResetHistory.Text = "history"
+        Me.bResetHistory.UseVisualStyleBackColor = True
         '
-        'txtTheme
+        'bResetBookmarks
         '
-        Me.txtTheme.AutoSize = True
-        Me.txtTheme.Location = New System.Drawing.Point(8, 193)
-        Me.txtTheme.Name = "txtTheme"
-        Me.txtTheme.Size = New System.Drawing.Size(56, 21)
-        Me.txtTheme.TabIndex = 7
-        Me.txtTheme.Text = "Theme"
+        Me.bResetBookmarks.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.bResetBookmarks.FlatAppearance.BorderSize = 0
+        Me.bResetBookmarks.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bResetBookmarks.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.bResetBookmarks.Location = New System.Drawing.Point(6, 102)
+        Me.bResetBookmarks.Name = "bResetBookmarks"
+        Me.bResetBookmarks.Size = New System.Drawing.Size(100, 32)
+        Me.bResetBookmarks.TabIndex = 14
+        Me.bResetBookmarks.Text = "bookmarks"
+        Me.bResetBookmarks.UseVisualStyleBackColor = True
         '
-        'comboTheme
+        'bResetMemory
         '
-        Me.comboTheme.BackColor = System.Drawing.Color.DimGray
-        Me.comboTheme.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.comboTheme.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.comboTheme.ForeColor = System.Drawing.Color.White
-        Me.comboTheme.FormattingEnabled = True
-        Me.comboTheme.Items.AddRange(New Object() {"Light", "Dark"})
-        Me.comboTheme.Location = New System.Drawing.Point(12, 217)
-        Me.comboTheme.Name = "comboTheme"
-        Me.comboTheme.Size = New System.Drawing.Size(150, 29)
-        Me.comboTheme.TabIndex = 7
+        Me.bResetMemory.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.bResetMemory.FlatAppearance.BorderSize = 0
+        Me.bResetMemory.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bResetMemory.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.bResetMemory.Location = New System.Drawing.Point(218, 102)
+        Me.bResetMemory.Name = "bResetMemory"
+        Me.bResetMemory.Size = New System.Drawing.Size(100, 32)
+        Me.bResetMemory.TabIndex = 16
+        Me.bResetMemory.Text = "memory"
+        Me.bResetMemory.UseVisualStyleBackColor = True
         '
-        'comboSearch
+        'boxPrivacy
         '
-        Me.comboSearch.BackColor = System.Drawing.Color.DimGray
-        Me.comboSearch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.comboSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.comboSearch.ForeColor = System.Drawing.Color.White
-        Me.comboSearch.FormattingEnabled = True
-        Me.comboSearch.Items.AddRange(New Object() {"Google", "Bing", "YouTube"})
-        Me.comboSearch.Location = New System.Drawing.Point(252, 217)
-        Me.comboSearch.Name = "comboSearch"
-        Me.comboSearch.Size = New System.Drawing.Size(150, 29)
-        Me.comboSearch.TabIndex = 8
+        Me.boxPrivacy.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.boxPrivacy.Controls.Add(Me.bResetBrowser)
+        Me.boxPrivacy.Controls.Add(Me.txtReset)
+        Me.boxPrivacy.Controls.Add(Me.bResetMemory)
+        Me.boxPrivacy.Controls.Add(Me.txtNewPin)
+        Me.boxPrivacy.Controls.Add(Me.bResetHistory)
+        Me.boxPrivacy.Controls.Add(Me.tbNewPin)
+        Me.boxPrivacy.Controls.Add(Me.txtPin)
+        Me.boxPrivacy.Controls.Add(Me.bResetBookmarks)
+        Me.boxPrivacy.Controls.Add(Me.tbPin)
+        Me.boxPrivacy.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.boxPrivacy.Location = New System.Drawing.Point(12, 209)
+        Me.boxPrivacy.Name = "boxPrivacy"
+        Me.boxPrivacy.Size = New System.Drawing.Size(460, 140)
+        Me.boxPrivacy.TabIndex = 17
+        Me.boxPrivacy.TabStop = False
+        Me.boxPrivacy.Text = "privacy"
         '
-        'cbTopSearchBar
+        'bResetBrowser
         '
-        Me.cbTopSearchBar.AutoSize = True
-        Me.cbTopSearchBar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cbTopSearchBar.Location = New System.Drawing.Point(6, 28)
-        Me.cbTopSearchBar.Name = "cbTopSearchBar"
-        Me.cbTopSearchBar.Size = New System.Drawing.Size(122, 25)
-        Me.cbTopSearchBar.TabIndex = 9
-        Me.cbTopSearchBar.Text = "Top search bar"
-        Me.cbTopSearchBar.UseVisualStyleBackColor = True
+        Me.bResetBrowser.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.bResetBrowser.FlatAppearance.BorderSize = 0
+        Me.bResetBrowser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bResetBrowser.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.bResetBrowser.Location = New System.Drawing.Point(354, 102)
+        Me.bResetBrowser.Name = "bResetBrowser"
+        Me.bResetBrowser.Size = New System.Drawing.Size(100, 32)
+        Me.bResetBrowser.TabIndex = 18
+        Me.bResetBrowser.Text = "browser"
+        Me.bResetBrowser.UseVisualStyleBackColor = True
         '
-        'bChangePassword
+        'txtReset
         '
-        Me.bChangePassword.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.bChangePassword.BackgroundImage = Global.Lemon.My.Resources.Resources.accept_light
-        Me.bChangePassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.bChangePassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.bChangePassword.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.bChangePassword.Location = New System.Drawing.Point(490, 121)
-        Me.bChangePassword.Name = "bChangePassword"
-        Me.bChangePassword.Size = New System.Drawing.Size(32, 32)
-        Me.bChangePassword.TabIndex = 6
-        Me.bChangePassword.UseVisualStyleBackColor = True
+        Me.txtReset.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.txtReset.AutoSize = True
+        Me.txtReset.Location = New System.Drawing.Point(2, 79)
+        Me.txtReset.Name = "txtReset"
+        Me.txtReset.Size = New System.Drawing.Size(55, 20)
+        Me.txtReset.TabIndex = 17
+        Me.txtReset.Text = "reset..."
         '
-        'tbOldPassword
+        'GroupBox1
         '
-        Me.tbOldPassword.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.tbOldPassword.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append
-        Me.tbOldPassword.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource
-        Me.tbOldPassword.BackColor = System.Drawing.Color.DimGray
-        Me.tbOldPassword.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.tbOldPassword.ForeColor = System.Drawing.Color.White
-        Me.tbOldPassword.Location = New System.Drawing.Point(12, 127)
-        Me.tbOldPassword.Name = "tbOldPassword"
-        Me.tbOldPassword.Size = New System.Drawing.Size(232, 22)
-        Me.tbOldPassword.TabIndex = 4
+        Me.GroupBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox1.Controls.Add(Me.cbTopNav)
+        Me.GroupBox1.Controls.Add(Me.cbHideWelcome)
+        Me.GroupBox1.Controls.Add(Me.txtHome)
+        Me.GroupBox1.Controls.Add(Me.tbHome)
+        Me.GroupBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(460, 191)
+        Me.GroupBox1.TabIndex = 18
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "preferences"
         '
-        'txtOldPassword
+        'cbTopNav
         '
-        Me.txtOldPassword.AutoSize = True
-        Me.txtOldPassword.Location = New System.Drawing.Point(8, 103)
-        Me.txtOldPassword.Name = "txtOldPassword"
-        Me.txtOldPassword.Size = New System.Drawing.Size(100, 21)
-        Me.txtOldPassword.TabIndex = 12
-        Me.txtOldPassword.Text = "Old Password"
+        Me.cbTopNav.AutoSize = True
+        Me.cbTopNav.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cbTopNav.Location = New System.Drawing.Point(6, 102)
+        Me.cbTopNav.Name = "cbTopNav"
+        Me.cbTopNav.Size = New System.Drawing.Size(125, 24)
+        Me.cbTopNav.TabIndex = 15
+        Me.cbTopNav.Text = "top navigation"
+        Me.cbTopNav.UseVisualStyleBackColor = True
         '
-        'tbNewPassword
+        'cbHideWelcome
         '
-        Me.tbNewPassword.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.tbNewPassword.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append
-        Me.tbNewPassword.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource
-        Me.tbNewPassword.BackColor = System.Drawing.Color.DimGray
-        Me.tbNewPassword.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.tbNewPassword.ForeColor = System.Drawing.Color.White
-        Me.tbNewPassword.Location = New System.Drawing.Point(252, 127)
-        Me.tbNewPassword.Name = "tbNewPassword"
-        Me.tbNewPassword.Size = New System.Drawing.Size(232, 22)
-        Me.tbNewPassword.TabIndex = 5
+        Me.cbHideWelcome.AutoSize = True
+        Me.cbHideWelcome.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cbHideWelcome.Location = New System.Drawing.Point(6, 72)
+        Me.cbHideWelcome.Name = "cbHideWelcome"
+        Me.cbHideWelcome.Size = New System.Drawing.Size(158, 24)
+        Me.cbHideWelcome.TabIndex = 14
+        Me.cbHideWelcome.Text = "hide welcome page"
+        Me.cbHideWelcome.UseVisualStyleBackColor = True
         '
-        'txtNewPassword
+        'txtHome
         '
-        Me.txtNewPassword.AutoSize = True
-        Me.txtNewPassword.Location = New System.Drawing.Point(248, 103)
-        Me.txtNewPassword.Name = "txtNewPassword"
-        Me.txtNewPassword.Size = New System.Drawing.Size(106, 21)
-        Me.txtNewPassword.TabIndex = 15
-        Me.txtNewPassword.Text = "New Password"
+        Me.txtHome.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.txtHome.AutoSize = True
+        Me.txtHome.Location = New System.Drawing.Point(2, 23)
+        Me.txtHome.Name = "txtHome"
+        Me.txtHome.Size = New System.Drawing.Size(48, 20)
+        Me.txtHome.TabIndex = 13
+        Me.txtHome.Text = "home"
         '
-        'cbEarlyReleases
+        'tbHome
         '
-        Me.cbEarlyReleases.AutoSize = True
-        Me.cbEarlyReleases.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cbEarlyReleases.Location = New System.Drawing.Point(6, 59)
-        Me.cbEarlyReleases.Name = "cbEarlyReleases"
-        Me.cbEarlyReleases.Size = New System.Drawing.Size(141, 25)
-        Me.cbEarlyReleases.TabIndex = 16
-        Me.cbEarlyReleases.Text = "Get early releases"
-        Me.cbEarlyReleases.UseVisualStyleBackColor = True
-        '
-        'gbPreferences
-        '
-        Me.gbPreferences.Controls.Add(Me.cbStartLocked)
-        Me.gbPreferences.Controls.Add(Me.cbTopSearchBar)
-        Me.gbPreferences.Controls.Add(Me.cbEarlyReleases)
-        Me.gbPreferences.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.gbPreferences.ForeColor = System.Drawing.Color.White
-        Me.gbPreferences.Location = New System.Drawing.Point(12, 296)
-        Me.gbPreferences.Name = "gbPreferences"
-        Me.gbPreferences.Size = New System.Drawing.Size(510, 103)
-        Me.gbPreferences.TabIndex = 17
-        Me.gbPreferences.TabStop = False
-        Me.gbPreferences.Text = "Preferences"
-        '
-        'cbStartLocked
-        '
-        Me.cbStartLocked.AutoSize = True
-        Me.cbStartLocked.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cbStartLocked.Location = New System.Drawing.Point(175, 28)
-        Me.cbStartLocked.Name = "cbStartLocked"
-        Me.cbStartLocked.Size = New System.Drawing.Size(169, 25)
-        Me.cbStartLocked.TabIndex = 17
-        Me.cbStartLocked.Text = "Lock browser on start"
-        Me.cbStartLocked.UseVisualStyleBackColor = True
+        Me.tbHome.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.tbHome.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.tbHome.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.tbHome.Location = New System.Drawing.Point(6, 46)
+        Me.tbHome.Name = "tbHome"
+        Me.tbHome.Size = New System.Drawing.Size(448, 20)
+        Me.tbHome.TabIndex = 12
         '
         'fOptions
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 21.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(534, 411)
-        Me.Controls.Add(Me.gbPreferences)
-        Me.Controls.Add(Me.tbNewPassword)
-        Me.Controls.Add(Me.txtNewPassword)
-        Me.Controls.Add(Me.bChangePassword)
-        Me.Controls.Add(Me.tbOldPassword)
-        Me.Controls.Add(Me.txtOldPassword)
-        Me.Controls.Add(Me.comboSearch)
-        Me.Controls.Add(Me.comboTheme)
-        Me.Controls.Add(Me.txtTheme)
-        Me.Controls.Add(Me.txtSearchEngine)
-        Me.Controls.Add(Me.bSetHomepage)
-        Me.Controls.Add(Me.bCurrentPage)
-        Me.Controls.Add(Me.tbHomepage)
-        Me.Controls.Add(Me.txtHomepage)
-        Me.Font = New System.Drawing.Font("Segoe UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ForeColor = System.Drawing.Color.White
+        Me.ClientSize = New System.Drawing.Size(484, 361)
+        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.boxPrivacy)
+        Me.Font = New System.Drawing.Font("Roboto", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(4)
-        Me.MaximizeBox = False
-        Me.MaximumSize = New System.Drawing.Size(550, 450)
-        Me.MinimumSize = New System.Drawing.Size(550, 450)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "fOptions"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Options"
-        Me.TopMost = True
-        Me.gbPreferences.ResumeLayout(False)
-        Me.gbPreferences.PerformLayout()
+        Me.Text = "options"
+        Me.boxPrivacy.ResumeLayout(False)
+        Me.boxPrivacy.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-    Friend WithEvents txtHomepage As System.Windows.Forms.Label
-    Friend WithEvents tbHomepage As System.Windows.Forms.TextBox
-    Friend WithEvents bCurrentPage As System.Windows.Forms.Button
-    Friend WithEvents bSetHomepage As System.Windows.Forms.Button
-    Friend WithEvents txtSearchEngine As System.Windows.Forms.Label
-    Friend WithEvents txtTheme As System.Windows.Forms.Label
-    Friend WithEvents comboTheme As System.Windows.Forms.ComboBox
-    Friend WithEvents comboSearch As System.Windows.Forms.ComboBox
-    Friend WithEvents cbTopSearchBar As System.Windows.Forms.CheckBox
-    Friend WithEvents bChangePassword As System.Windows.Forms.Button
-    Friend WithEvents tbOldPassword As System.Windows.Forms.TextBox
-    Friend WithEvents txtOldPassword As System.Windows.Forms.Label
-    Friend WithEvents tbNewPassword As System.Windows.Forms.TextBox
-    Friend WithEvents txtNewPassword As System.Windows.Forms.Label
-    Friend WithEvents cbEarlyReleases As System.Windows.Forms.CheckBox
-    Friend WithEvents gbPreferences As System.Windows.Forms.GroupBox
-    Friend WithEvents cbStartLocked As System.Windows.Forms.CheckBox
+    Friend WithEvents tbNewPin As System.Windows.Forms.TextBox
+    Friend WithEvents txtNewPin As System.Windows.Forms.Label
+    Friend WithEvents tbPin As System.Windows.Forms.TextBox
+    Friend WithEvents txtPin As System.Windows.Forms.Label
+    Friend WithEvents bResetHistory As System.Windows.Forms.Button
+    Friend WithEvents bResetBookmarks As System.Windows.Forms.Button
+    Friend WithEvents bResetMemory As System.Windows.Forms.Button
+    Friend WithEvents boxPrivacy As System.Windows.Forms.GroupBox
+    Friend WithEvents txtReset As System.Windows.Forms.Label
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents bResetBrowser As System.Windows.Forms.Button
+    Friend WithEvents txtHome As System.Windows.Forms.Label
+    Friend WithEvents tbHome As System.Windows.Forms.TextBox
+    Friend WithEvents cbTopNav As System.Windows.Forms.CheckBox
+    Friend WithEvents cbHideWelcome As System.Windows.Forms.CheckBox
 End Class

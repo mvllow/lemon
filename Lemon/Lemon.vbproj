@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C029AF32-023F-41F5-8A7B-EED87C785FC0}</ProjectGuid>
+    <ProjectGuid>{5CE4C558-F1A6-4378-A8EA-0EA2D5576360}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <StartupObject>Lemon.My.MyApplication</StartupObject>
     <RootNamespace>Lemon</RootNamespace>
@@ -21,17 +21,14 @@
     <UpdateInterval>7</UpdateInterval>
     <UpdateIntervalUnits>Days</UpdateIntervalUnits>
     <UpdatePeriodically>false</UpdatePeriodically>
-    <UpdateRequired>true</UpdateRequired>
+    <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <InstallUrl>https://dl.dropbox.com/u/57594406/downloads/lemon/release/</InstallUrl>
-    <TargetCulture>en-US</TargetCulture>
-    <ProductName>Lemon</ProductName>
-    <PublisherName>Mellow</PublisherName>
-    <MinimumRequiredVersion>1.0.0.0</MinimumRequiredVersion>
-    <ApplicationRevision>4</ApplicationRevision>
-    <ApplicationVersion>1.0.5.%2a</ApplicationVersion>
+    <ProductName>lemon</ProductName>
+    <PublisherName>Tate Kwiecinski</PublisherName>
+    <ApplicationRevision>6</ApplicationRevision>
+    <ApplicationVersion>1.3.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
-    <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -74,7 +71,7 @@
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>27710A25742DE43B87DB11F85AC408D6DCE3161C</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>9F521A17885C4E94E701FB2833A6A78512C019C6</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestKeyFile>Lemon_TemporaryKey.pfx</ManifestKeyFile>
@@ -84,15 +81,6 @@
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>true</SignManifests>
-  </PropertyGroup>
-  <PropertyGroup>
-    <TargetZone>LocalIntranet</TargetZone>
-  </PropertyGroup>
-  <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
-  </PropertyGroup>
-  <PropertyGroup>
-    <AssemblyOriginatorKeyFile>Lemon_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -119,31 +107,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ApplicationEvents.vb" />
-    <Compile Include="fBookmarks.Designer.vb">
-      <DependentUpon>fBookmarks.vb</DependentUpon>
-    </Compile>
-    <Compile Include="fBookmarks.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fDownloads.Designer.vb">
-      <DependentUpon>fDownloads.vb</DependentUpon>
-    </Compile>
-    <Compile Include="fDownloads.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fHistory.Designer.vb">
-      <DependentUpon>fHistory.vb</DependentUpon>
-    </Compile>
-    <Compile Include="fHistory.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fLogin.Designer.vb">
-      <DependentUpon>fLogin.vb</DependentUpon>
-    </Compile>
-    <Compile Include="fLogin.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="fMain.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -151,10 +114,10 @@
       <DependentUpon>fMain.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fNotepad.Designer.vb">
-      <DependentUpon>fNotepad.vb</DependentUpon>
+    <Compile Include="fNotes.Designer.vb">
+      <DependentUpon>fNotes.vb</DependentUpon>
     </Compile>
-    <Compile Include="fNotepad.vb">
+    <Compile Include="fNotes.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="fOptions.Designer.vb">
@@ -169,10 +132,10 @@
     <Compile Include="fScreenshot.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fSplash.Designer.vb">
-      <DependentUpon>fSplash.vb</DependentUpon>
+    <Compile Include="fWelcome.Designer.vb">
+      <DependentUpon>fWelcome.vb</DependentUpon>
     </Compile>
-    <Compile Include="fSplash.vb">
+    <Compile Include="fWelcome.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -192,23 +155,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="fBookmarks.resx">
-      <DependentUpon>fBookmarks.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fDownloads.resx">
-      <DependentUpon>fDownloads.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fHistory.resx">
-      <DependentUpon>fHistory.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fLogin.resx">
-      <DependentUpon>fLogin.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="fMain.resx">
       <DependentUpon>fMain.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fNotepad.resx">
-      <DependentUpon>fNotepad.vb</DependentUpon>
+    <EmbeddedResource Include="fNotes.resx">
+      <DependentUpon>fNotes.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fOptions.resx">
       <DependentUpon>fOptions.vb</DependentUpon>
@@ -216,14 +167,14 @@
     <EmbeddedResource Include="fScreenshot.resx">
       <DependentUpon>fScreenshot.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fSplash.resx">
-      <DependentUpon>fSplash.vb</DependentUpon>
+    <EmbeddedResource Include="fWelcome.resx">
+      <DependentUpon>fWelcome.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -241,36 +192,46 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="res\bg_dark.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="res\bg_light.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="icon.ico" />
-    <None Include="res\google-nose.jpg" />
-    <None Include="res\settings_light.png" />
-    <None Include="res\settings_dark.png" />
-    <None Include="res\menu_light.png" />
-    <None Include="res\menu_dark.png" />
-    <None Include="res\properties_light.png" />
-    <None Include="res\properties_dark.png" />
-    <None Include="res\print_light.png" />
-    <None Include="res\print_dark.png" />
-    <None Include="res\preview_light.png" />
-    <None Include="res\preview_dark.png" />
-    <None Include="res\new_light.png" />
-    <None Include="res\new_dark.png" />
-    <None Include="res\history_light.png" />
-    <None Include="res\history_dark.png" />
-    <None Include="res\expand_light.png" />
-    <None Include="res\expand_dark.png" />
-    <None Include="res\setup_light.png" />
-    <None Include="res\setup_dark.png" />
-    <None Include="res\notes_light.png" />
-    <None Include="res\notes_dark.png" />
-    <None Include="res\edit_light.png" />
-    <None Include="res\edit_dark.png" />
+    <None Include="res\grid.png" />
+    <None Include="res\about_alt.png" />
+    <None Include="res\favicon.png" />
+    <None Include="res\collapse.png" />
+    <None Include="res\search_alt.png" />
+    <None Include="res\cancel_alt.png" />
+    <None Include="res\unlock.png" />
+    <None Include="res\star.png" />
+    <None Include="res\sound.png" />
+    <None Include="res\silent.png" />
+    <None Include="res\share.png" />
+    <None Include="res\setup.png" />
+    <None Include="res\settings.png" />
+    <None Include="res\search.png" />
+    <None Include="res\save.png" />
+    <None Include="res\remove.png" />
+    <None Include="res\properties.png" />
+    <None Include="res\print.png" />
+    <None Include="res\preview.png" />
+    <None Include="res\offline.png" />
+    <None Include="res\notes.png" />
+    <None Include="res\new.png" />
+    <None Include="res\minimize.png" />
+    <None Include="res\menu.png" />
+    <None Include="res\lock.png" />
+    <None Include="res\history.png" />
+    <None Include="res\forward_alt.png" />
+    <None Include="res\forward.png" />
+    <None Include="res\expand.png" />
+    <None Include="res\edit.png" />
+    <None Include="res\download.png" />
+    <None Include="res\cancel.png" />
+    <None Include="res\camera.png" />
+    <None Include="res\bookmark.png" />
+    <None Include="res\back_alt.png" />
+    <None Include="res\back.png" />
+    <None Include="res\alert.png" />
+    <None Include="res\add.png" />
+    <None Include="res\accept.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
@@ -288,9 +249,6 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

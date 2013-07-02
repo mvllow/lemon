@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Express 2012 for Windows Desktop
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Lemon", "Lemon\Lemon.vbproj", "{C029AF32-023F-41F5-8A7B-EED87C785FC0}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Lemon", "Lemon\Lemon.vbproj", "{5CE4C558-F1A6-4378-A8EA-0EA2D5576360}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C029AF32-023F-41F5-8A7B-EED87C785FC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C029AF32-023F-41F5-8A7B-EED87C785FC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C029AF32-023F-41F5-8A7B-EED87C785FC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C029AF32-023F-41F5-8A7B-EED87C785FC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CE4C558-F1A6-4378-A8EA-0EA2D5576360}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CE4C558-F1A6-4378-A8EA-0EA2D5576360}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CE4C558-F1A6-4378-A8EA-0EA2D5576360}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CE4C558-F1A6-4378-A8EA-0EA2D5576360}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
