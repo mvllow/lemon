@@ -16,7 +16,13 @@
     End Sub
 
     Private Sub fOptions_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        My.Settings.dataHome = tbHome.Text
 
+        If Not tbNewPin.Text = "" Then
+            If tbNewPin.Text = tbPin.Text Then
+                My.Settings.dataPin = tbPin.Text
+            End If
+        End If
     End Sub
 
     Private Sub cbHideWelcome_CheckedChanged(sender As Object, e As EventArgs) Handles cbHideWelcome.CheckedChanged
