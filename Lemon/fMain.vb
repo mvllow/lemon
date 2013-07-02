@@ -122,7 +122,11 @@ Public Class fMain
     Private Sub loadComplete(ByVal sender As Object, ByVal e As System.Windows.Forms.WebBrowserDocumentCompletedEventArgs)
         If My.Settings.dataBookmarks.Contains(CType(tcWeb.SelectedTab.Controls.Item(0), WebBrowser).DocumentTitle) Then
             bBookmark.BackgroundImage = My.Resources.bookmark
+        Else
+            bBookmark.BackgroundImage = My.Resources.star
         End If
+
+        My.Settings.dataHistory.Add(CType(tcWeb.SelectedTab.Controls.Item(0), WebBrowser).Url.ToString)
 
         Try
             tcWeb.SelectedTab.Text = CType(tcWeb.SelectedTab.Controls.Item(0), WebBrowser).DocumentTitle
@@ -204,7 +208,6 @@ Public Class fMain
         tbNav.AutoCompleteCustomSource.Add(tbNav.Text)
         listHistory.Items.Add(CType(tcWeb.SelectedTab.Controls.Item(0), WebBrowser).Url.ToString)
 
-        My.Settings.dataHistory.Add(CType(tcWeb.SelectedTab.Controls.Item(0), WebBrowser).Url.ToString)
         My.Settings.dataMemory.Add(tbNav.Text)
         My.Settings.varGoogle = True
     End Sub
