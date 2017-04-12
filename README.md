@@ -1,4 +1,4 @@
-# lemon
+# Lemon
 > This project is no longer maintained and will no longer receive OTA updates
 
 ## About
