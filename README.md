@@ -1,6 +1,5 @@
-lemon
-=====
+# lemon
+> This project is no longer maintained and will no longer receive OTA updates
 
-This web browser was built with user interface in mind*. Lemon is no longer maintained and will no longer receive OTA updates. If an update is issued, no notifications will be received -- but if you are interested please follow this page or watch my site: http://mellowdev.com
-
-*The search layer used depends on which version of IE your system has, but defaults to IE7.
+## About
+Web browsers seemed to be the most common thing to make when learning Visual Basic or C#. After watching a plethora of tutorials, I noticed most were not focused on design in the slightest. Although Lemon does have a few unique features, the design is really what sets it apart from other VB browsers.
